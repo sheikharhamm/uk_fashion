@@ -66,45 +66,45 @@ function getHeader(active = 'home') {
         </div>
       </div>
     </div>
+  </header>
 
-    <!-- Mobile Drawer -->
-    <div id="mobile-menu" class="hidden lg:hidden fixed inset-0 z-50 bg-brandDark/60 backdrop-blur-sm">
-      <div class="fixed top-0 left-0 bottom-0 w-3/4 max-w-xs bg-white p-6 shadow-2xl flex flex-col justify-between">
-        <div>
-          <div class="flex justify-between items-center pb-6 border-b border-gray-100">
-            <span class="font-serif-luxury font-bold text-xl text-brandDark">UK FASHION</span>
-            <button id="mobile-menu-close" class="p-1 text-gray-500 hover:text-brandDark" aria-label="Close Menu">
-              <i data-lucide="x" class="w-6 h-6"></i>
-            </button>
-          </div>
-          <div class="flex flex-col space-y-4 mt-6 text-sm font-semibold tracking-wider uppercase text-gray-800">
-            <a href="index.html" class="${active === 'home' ? 'text-brandGold font-bold' : 'hover:text-brandGold'}">Home</a>
-            <a href="collection.html?category=Bridal" class="${active === 'bridal' ? 'text-brandGold font-bold' : 'hover:text-brandGold'}">Bridal Suits</a>
-            <a href="collection.html?category=Walima" class="${active === 'walima' ? 'text-brandGold font-bold' : 'hover:text-brandGold'}">Walima Edit</a>
-            <a href="collection.html?category=Festive" class="${active === 'festive' ? 'text-brandGold font-bold' : 'hover:text-brandGold'}">Mehndi & Festive</a>
-            <a href="collection.html" class="${active === 'collection' ? 'text-brandGold font-bold' : 'hover:text-brandGold'}">Complete Catalog</a>
-            <a href="about.html" class="${active === 'about' ? 'text-brandGold font-bold' : 'hover:text-brandGold'}">Heritage of Doch</a>
-            <a href="contact.html" class="${active === 'contact' ? 'text-brandGold font-bold' : 'hover:text-brandGold'}">Custom Consultations</a>
-          </div>
+  <!-- Mobile Drawer -->
+  <div id="mobile-menu" class="hidden lg:hidden fixed inset-0 z-50 bg-brandDark/60 backdrop-blur-sm">
+    <div class="fixed inset-y-0 left-0 w-3/4 max-w-xs bg-white p-6 shadow-2xl flex flex-col justify-between overflow-y-auto">
+      <div>
+        <div class="flex justify-between items-center pb-6 border-b border-gray-100">
+          <span class="font-serif-luxury font-bold text-xl text-brandDark">UK FASHION</span>
+          <button id="mobile-menu-close" class="p-1 text-gray-500 hover:text-brandDark" aria-label="Close Menu">
+            <i data-lucide="x" class="w-6 h-6"></i>
+          </button>
         </div>
-
-        <div class="pt-6 border-t border-gray-100">
-          <p class="text-xs text-gray-500 uppercase tracking-widest mb-3">Direct Social Channels</p>
-          <div class="flex gap-4 mb-4">
-            <a href="https://www.instagram.com/kj_.collection/" target="_blank" class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-700 hover:bg-brandGold hover:text-white transition">
-              <i data-lucide="instagram" class="w-4 h-4"></i>
-            </a>
-            <a href="https://www.tiktok.com/@uk_fashion92?_r=1&_t=ZS-9BJd87YfHgP" target="_blank" class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-700 hover:bg-brandGold hover:text-white transition">
-              <i data-lucide="video" class="w-4 h-4"></i>
-            </a>
-          </div>
-          <a href="#" class="brand-wa-link block text-center w-full py-2.5 bg-brandDark text-brandGoldLight font-bold rounded-lg text-xs uppercase tracking-wider">
-            WhatsApp Concierge
-          </a>
+        <div class="flex flex-col space-y-4 mt-6 text-sm font-semibold tracking-wider uppercase text-gray-800">
+          <a href="index.html" class="${active === 'home' ? 'text-brandGold font-bold' : 'hover:text-brandGold'}">Home</a>
+          <a href="collection.html?category=Bridal" class="${active === 'bridal' ? 'text-brandGold font-bold' : 'hover:text-brandGold'}">Bridal Suits</a>
+          <a href="collection.html?category=Walima" class="${active === 'walima' ? 'text-brandGold font-bold' : 'hover:text-brandGold'}">Walima Edit</a>
+          <a href="collection.html?category=Festive" class="${active === 'festive' ? 'text-brandGold font-bold' : 'hover:text-brandGold'}">Mehndi & Festive</a>
+          <a href="collection.html" class="${active === 'collection' ? 'text-brandGold font-bold' : 'hover:text-brandGold'}">Complete Catalog</a>
+          <a href="about.html" class="${active === 'about' ? 'text-brandGold font-bold' : 'hover:text-brandGold'}">Heritage of Doch</a>
+          <a href="contact.html" class="${active === 'contact' ? 'text-brandGold font-bold' : 'hover:text-brandGold'}">Custom Consultations</a>
         </div>
       </div>
+
+      <div class="pt-6 border-t border-gray-100">
+        <p class="text-xs text-gray-500 uppercase tracking-widest mb-3">Direct Social Channels</p>
+        <div class="flex gap-4 mb-4">
+          <a href="https://www.instagram.com/kj_.collection/" target="_blank" class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-700 hover:bg-brandGold hover:text-white transition">
+            <i data-lucide="instagram" class="w-4 h-4"></i>
+          </a>
+          <a href="https://www.tiktok.com/@uk_fashion92?_r=1&_t=ZS-9BJd87YfHgP" target="_blank" class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-700 hover:bg-brandGold hover:text-white transition">
+            <i data-lucide="video" class="w-4 h-4"></i>
+          </a>
+        </div>
+        <a href="#" class="brand-wa-link block text-center w-full py-2.5 bg-brandDark text-brandGoldLight font-bold rounded-lg text-xs uppercase tracking-wider">
+          WhatsApp Concierge
+        </a>
+      </div>
     </div>
-  </header>`;
+  </div>`;
 }
 
 function getFooter() {

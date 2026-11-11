@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Video, MessageCircle, PhoneCall, Sparkles } from 'lucide-react';
 import { InstagramIcon, TikTokIcon, WhatsAppIcon } from './Icons';
@@ -8,6 +8,13 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const location = useLocation();
   const { brand } = useProducts();
+
+  useEffect(() => {
+    document.body.style.overflow = mobileOpen ? 'hidden' : '';
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [mobileOpen]);
 
   const navLinks = [
     { name: 'Home', path: '/' },
@@ -199,86 +206,93 @@ export default function Navbar() {
           </div>
 
         </div>
+      </header>
 
-        {/* MOBILE DRAWER */}
-        {mobileOpen && (
-          <div className="fixed inset-0 z-50 bg-[#111111]/70 backdrop-blur-sm lg:hidden">
-            <div className="fixed top-0 left-0 bottom-0 w-3/4 max-w-xs bg-white p-6 shadow-2xl flex flex-col justify-between">
-              <div>
-                <div className="flex justify-between items-center pb-5 border-b border-gray-100">
-                  <div>
-                    <span className="font-serif-luxury font-bold text-xl text-[#111111]">UK FASHION</span>
-                    <span className="block text-[9px] tracking-[0.25em] uppercase text-gray-400">Balochi Couture</span>
-                  </div>
-                  <button
-                    onClick={() => setMobileOpen(false)}
-                    className="p-1 text-gray-400 hover:text-black"
-                  >
-                    <X className="w-6 h-6" />
-                  </button>
+      {/* MOBILE DRAWER (rendered outside header so backdrop-blur doesn't clip fixed positioning) */}
+      {mobileOpen && (
+        <div
+          onClick={() => setMobileOpen(false)}
+          className="fixed inset-0 z-50 bg-[#111111]/70 backdrop-blur-sm lg:hidden"
+        >
+          <div
+            onClick={(e) => e.stopPropagation()}
+            className="fixed inset-y-0 left-0 w-3/4 max-w-xs bg-white p-6 shadow-2xl flex flex-col justify-between overflow-y-auto"
+          >
+            <div>
+              <div className="flex justify-between items-center pb-5 border-b border-gray-100">
+                <div>
+                  <span className="font-serif-luxury font-bold text-xl text-[#111111]">UK FASHION</span>
+                  <span className="block text-[9px] tracking-[0.25em] uppercase text-gray-400">Balochi Couture</span>
                 </div>
-
-                <div className="flex flex-col space-y-3.5 mt-6 text-xs font-semibold tracking-[0.16em] uppercase text-gray-800">
-                  {navLinks.map((link) => {
-                    const isActive =
-                      location.pathname + location.search === link.path ||
-                      (link.path === '/' && location.pathname === '/' && !location.search);
-
-                    return (
-                      <Link
-                        key={link.name}
-                        to={link.path}
-                        onClick={() => setMobileOpen(false)}
-                        className={`py-2 px-3 rounded transition ${
-                          isActive
-                            ? 'bg-[#faf7f2] text-[#c5a059] font-bold border-l-2 border-[#c5a059]'
-                            : 'hover:text-[#c5a059] hover:bg-gray-50'
-                        }`}
-                      >
-                        {link.name}
-                      </Link>
-                    );
-                  })}
-                </div>
+                <button
+                  onClick={() => setMobileOpen(false)}
+                  className="p-1 text-gray-400 hover:text-black"
+                  aria-label="Close menu"
+                >
+                  <X className="w-6 h-6" />
+                </button>
               </div>
 
-              <div className="pt-6 border-t border-gray-100">
-                <p className="text-[10px] text-gray-400 uppercase tracking-widest mb-3 font-medium">
-                  Atelier & Social Channels
-                </p>
-                <div className="flex gap-3 mb-4">
-                  <a
-                    href={brand.instagramUrl}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-700 hover:bg-[#c5a059] hover:text-white transition"
-                    title="Instagram @kj_.collection"
-                  >
-                    <InstagramIcon className="w-4 h-4" />
-                  </a>
-                  <a
-                    href={brand.tiktokUrl}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-700 hover:bg-[#c5a059] hover:text-white transition"
-                    title="TikTok @uk_fashion92"
-                  >
-                    <TikTokIcon className="w-4 h-4" />
-                  </a>
-                </div>
-                <a
-                  href={waLink}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="block text-center w-full py-3 bg-[#111111] text-[#e4ce9e] font-bold rounded-lg text-xs uppercase tracking-wider shadow"
-                >
-                  WhatsApp VIP Concierge
-                </a>
+              <div className="flex flex-col space-y-3.5 mt-6 text-xs font-semibold tracking-[0.16em] uppercase text-gray-800">
+                {navLinks.map((link) => {
+                  const isActive =
+                    location.pathname + location.search === link.path ||
+                    (link.path === '/' && location.pathname === '/' && !location.search);
+
+                  return (
+                    <Link
+                      key={link.name}
+                      to={link.path}
+                      onClick={() => setMobileOpen(false)}
+                      className={`py-2 px-3 rounded transition ${
+                        isActive
+                          ? 'bg-[#faf7f2] text-[#c5a059] font-bold border-l-2 border-[#c5a059]'
+                          : 'hover:text-[#c5a059] hover:bg-gray-50'
+                      }`}
+                    >
+                      {link.name}
+                    </Link>
+                  );
+                })}
               </div>
             </div>
+
+            <div className="pt-6 border-t border-gray-100">
+              <p className="text-[10px] text-gray-400 uppercase tracking-widest mb-3 font-medium">
+                Atelier & Social Channels
+              </p>
+              <div className="flex gap-3 mb-4">
+                <a
+                  href={brand.instagramUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-700 hover:bg-[#c5a059] hover:text-white transition"
+                  title="Instagram @kj_.collection"
+                >
+                  <InstagramIcon className="w-4 h-4" />
+                </a>
+                <a
+                  href={brand.tiktokUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-700 hover:bg-[#c5a059] hover:text-white transition"
+                  title="TikTok @uk_fashion92"
+                >
+                  <TikTokIcon className="w-4 h-4" />
+                </a>
+              </div>
+              <a
+                href={waLink}
+                target="_blank"
+                rel="noreferrer"
+                className="block text-center w-full py-3 bg-[#111111] text-[#e4ce9e] font-bold rounded-lg text-xs uppercase tracking-wider shadow"
+              >
+                WhatsApp VIP Concierge
+              </a>
+            </div>
           </div>
-        )}
-      </header>
+        </div>
+      )}
     </>
   );
 }
