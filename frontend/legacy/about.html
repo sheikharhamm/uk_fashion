@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heritage Story & Artisans | UK Fashion Balochi Haute Couture</title>
+  <meta name="description" content="Discover the centuries-old history of Balochi Doch hand embroidery, the master craftswomen behind UK Fashion, and our connection with @kj_.collection.">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandGold: '#c5a059',
+            brandGoldLight: '#e4ce9e',
+            brandGoldDark: '#8a6829',
+            brandMaroon: '#540f1a',
+            brandDark: '#111111',
+            brandCream: '#faf7f2',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-brandCream text-gray-800 antialiased selection:bg-brandGold selection:text-white">
+
+  
+  <!-- TOP BAR -->
+  <div class="bg-brandDark text-brandGoldLight text-xs py-2 px-4 border-b border-brandGold/20">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center gap-3">
+        <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+        <span class="tracking-widest uppercase font-medium">Authentic Handcrafted Balochi Doch • Bespoke Bridal Orders</span>
+      </div>
+      <div class="flex items-center gap-6">
+        <a href="https://www.instagram.com/kj_.collection/" target="_blank" class="hover:text-white transition flex items-center gap-1.5 brand-ig-link">
+          <i data-lucide="instagram" class="w-3.5 h-3.5"></i> <span class="brand-ig-handle">@kj_.collection</span>
+        </a>
+        <a href="https://www.tiktok.com/@kj_.collection" target="_blank" class="hover:text-white transition flex items-center gap-1.5 brand-tt-link">
+          <i data-lucide="video" class="w-3.5 h-3.5"></i> <span>TikTok Feed</span>
+        </a>
+        <a href="#" class="brand-wa-link hover:text-white transition flex items-center gap-1.5 text-emerald-400 font-semibold">
+          <i data-lucide="message-circle" class="w-3.5 h-3.5"></i> <span>VIP Consultation</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100 transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <button id="mobile-menu-toggle" class="lg:hidden p-2 text-gray-700 hover:text-brandGold focus:outline-none" aria-label="Toggle Menu">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+
+        <div class="flex-shrink-0 text-center lg:text-left">
+          <a href="index.html" class="group inline-block">
+            <h1 class="font-serif-luxury text-2xl sm:text-3xl font-extrabold tracking-widest text-brandDark uppercase group-hover:text-brandGold transition-colors">
+              UK <span class="text-brandGold">FASHION</span>
+            </h1>
+            <p class="text-[10px] tracking-[0.35em] uppercase text-gray-500 font-medium -mt-1">Balochi Haute Couture</p>
+          </a>
+        </div>
+
+        <nav class="hidden lg:flex items-center space-x-8 text-sm uppercase tracking-wider font-medium text-gray-700">
+          <a href="index.html" class="hover:text-brandGold transition">Home</a>
+          <a href="collection.html?category=Bridal" class="hover:text-brandGold transition">Bridal Suits</a>
+          <a href="collection.html?category=Walima" class="hover:text-brandGold transition">Walima Edit</a>
+          <a href="collection.html?category=Festive" class="hover:text-brandGold transition">Mehndi & Festive</a>
+          <a href="collection.html" class="hover:text-brandGold transition">All Collections</a>
+          <a href="about.html" class="text-brandGold font-bold border-b-2 border-brandGold pb-1">Heritage Story</a>
+          <a href="contact.html" class="hover:text-brandGold transition">Contact & Inquiry</a>
+        </nav>
+
+        <div class="flex items-center space-x-4">
+          <a href="https://www.instagram.com/kj_.collection/" target="_blank" class="p-2 text-gray-600 hover:text-brandGold transition rounded-full hover:bg-gray-50" title="Visit Instagram">
+            <i data-lucide="instagram" class="w-5 h-5"></i>
+          </a>
+          <a href="https://www.tiktok.com/@kj_.collection" target="_blank" class="p-2 text-gray-600 hover:text-brandGold transition rounded-full hover:bg-gray-50" title="Watch on TikTok">
+            <i data-lucide="video" class="w-5 h-5"></i>
+          </a>
+          <a href="#" class="brand-wa-link hidden sm:inline-flex items-center gap-2 bg-brandDark text-brandGoldLight hover:bg-brandGold hover:text-white px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-300 shadow-md">
+            <i data-lucide="phone-call" class="w-3.5 h-3.5 text-emerald-400"></i>
+            <span>Book Bridal</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-menu" class="hidden lg:hidden fixed inset-0 z-50 bg-brandDark/60 backdrop-blur-sm">
+      <div class="fixed top-0 left-0 bottom-0 w-3/4 max-w-xs bg-white p-6 shadow-2xl flex flex-col justify-between">
+        <div>
+          <div class="flex justify-between items-center pb-6 border-b border-gray-100">
+            <span class="font-serif-luxury font-bold text-xl text-brandDark">UK FASHION</span>
+            <button id="mobile-menu-close" class="p-1 text-gray-500 hover:text-brandDark" aria-label="Close Menu">
+              <i data-lucide="x" class="w-6 h-6"></i>
+            </button>
+          </div>
+          <div class="flex flex-col space-y-4 mt-6 text-sm font-semibold tracking-wider uppercase text-gray-800">
+            <a href="index.html" class="hover:text-brandGold">Home</a>
+            <a href="collection.html?category=Bridal" class="hover:text-brandGold">Bridal Suits</a>
+            <a href="collection.html?category=Walima" class="hover:text-brandGold">Walima Edit</a>
+            <a href="collection.html?category=Festive" class="hover:text-brandGold">Mehndi & Festive</a>
+            <a href="collection.html" class="hover:text-brandGold">Complete Catalog</a>
+            <a href="about.html" class="text-brandGold font-bold">Heritage of Doch</a>
+            <a href="contact.html" class="hover:text-brandGold">Custom Consultations</a>
+          </div>
+        </div>
+
+        <div class="pt-6 border-t border-gray-100">
+          <p class="text-xs text-gray-500 uppercase tracking-widest mb-3">Direct Social Channels</p>
+          <div class="flex gap-4 mb-4">
+            <a href="https://www.instagram.com/kj_.collection/" target="_blank" class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-700 hover:bg-brandGold hover:text-white transition">
+              <i data-lucide="instagram" class="w-4 h-4"></i>
+            </a>
+            <a href="https://www.tiktok.com/@kj_.collection" target="_blank" class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-700 hover:bg-brandGold hover:text-white transition">
+              <i data-lucide="video" class="w-4 h-4"></i>
+            </a>
+          </div>
+          <a href="#" class="brand-wa-link block text-center w-full py-2.5 bg-brandDark text-brandGoldLight font-bold rounded-lg text-xs uppercase tracking-wider">
+            WhatsApp Concierge
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- BANNER -->
+  <section class="bg-brandDark text-white py-16 border-b border-brandGold/30 relative overflow-hidden">
+    <div class="absolute inset-0 opacity-25 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?q=80&w=1600&auto=format&fit=crop');"></div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <span class="text-xs uppercase tracking-[0.3em] text-brandGold font-bold">The Royal Craft of Balochistan</span>
+      <h1 class="font-serif-luxury text-3xl sm:text-5xl font-extrabold text-white mt-2">
+        Centuries of Balochi Doch Heritage
+      </h1>
+      <p class="text-sm text-gray-300 max-w-2xl mx-auto mt-4 leading-relaxed font-light">
+        Where every needlepoint thread preserves the ancestral geometry, nobility, and soul of Baluchi women artisans.
+      </p>
+    </div>
+  </section>
+
+  <!-- STORY CONTENT -->
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-16">
+    
+    <!-- Section 1 -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      <div>
+        <span class="text-xs font-bold text-brandGold uppercase tracking-widest">Our Vision</span>
+        <h2 class="font-serif-luxury text-2xl sm:text-3xl font-bold text-gray-900 mt-1 mb-4">
+          Reviving Royal Couture for Modern Brides
+        </h2>
+        <p class="text-sm text-gray-600 leading-relaxed mb-4">
+          <strong>UK Fashion</strong> was founded on a singular passion: to elevate authentic <strong>Balochi Doch (Needlework)</strong> from a regional cultural secret onto the global high-fashion stage. 
+        </p>
+        <p class="text-sm text-gray-600 leading-relaxed">
+          Inspired by the bespoke curation of <strong>@kj_.collection</strong>, we bring brides in the UK, North America, the Gulf, and Pakistan heirloom suits that will be treasured for generations.
+        </p>
+      </div>
+      <div class="rounded-lg overflow-hidden shadow-lg border-2 border-brandGold/20 aspect-[4/3]">
+        <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?q=80&w=800&auto=format&fit=crop" alt="Balochi Doch needlework" class="w-full h-full object-cover">
+      </div>
+    </div>
+
+    <!-- Section 2: Anatomy of Balochi Doch -->
+    <div class="bg-white p-8 sm:p-10 rounded-lg border border-gray-200 shadow-sm">
+      <div class="text-center max-w-xl mx-auto mb-10">
+        <span class="text-xs font-bold text-brandGold uppercase tracking-widest">Artisanal Elements</span>
+        <h3 class="font-serif-luxury text-2xl font-bold text-gray-900 mt-1">The Anatomy of Authentic Doch</h3>
+        <p class="text-xs text-gray-500 mt-1">Every suit incorporates distinctive historical signatures.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <div class="p-5 bg-brandCream rounded border border-brandGold/20">
+          <h4 class="font-serif-luxury font-bold text-base text-gray-900 mb-2 text-brandGoldDark">1. Ji & Gardan (Chest Plate)</h4>
+          <p class="text-xs text-gray-600 leading-relaxed">
+            The heart of the dress, featuring thousands of miniature geometric stitches crafted in perfect mathematical harmony.
+          </p>
+        </div>
+
+        <div class="p-5 bg-brandCream rounded border border-brandGold/20">
+          <h4 class="font-serif-luxury font-bold text-base text-gray-900 mb-2 text-brandGoldDark">2. Pandol (Royal Pocket)</h4>
+          <p class="text-xs text-gray-600 leading-relaxed">
+            The iconic downward triangular pocket extending below the waistline, traditionally symbolizing abundance and grace.
+          </p>
+        </div>
+
+        <div class="p-5 bg-brandCream rounded border border-brandGold/20">
+          <h4 class="font-serif-luxury font-bold text-base text-gray-900 mb-2 text-brandGoldDark">3. Asteen & Pauncha (Cuffs)</h4>
+          <p class="text-xs text-gray-600 leading-relaxed">
+            Heavy matching sleeve bands and trouser cuffs bordered with hand-beaded trims and mirror reflections.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 3: Social & Consultation CTA -->
+    <div class="bg-brandDark rounded-xl p-8 sm:p-12 text-center text-white relative overflow-hidden">
+      <div class="relative z-10 max-w-2xl mx-auto">
+        <h3 class="font-serif-luxury text-2xl sm:text-3xl font-bold mb-3">Begin Your Custom Bridal Journey</h3>
+        <p class="text-xs sm:text-sm text-gray-300 mb-6 leading-relaxed">
+          Because true Doch takes several months of dedicated stitching, we recommend booking your bridal consultation 4 to 6 months prior to your wedding day.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="#" class="brand-wa-link px-6 py-3 bg-brandGold hover:bg-brandGoldDark text-white font-bold text-xs uppercase tracking-widest rounded transition flex items-center gap-2">
+            <i data-lucide="message-circle" class="w-4 h-4 text-emerald-300"></i>
+            WhatsApp Consultation
+          </a>
+          <a href="https://www.instagram.com/kj_.collection/" target="_blank" class="px-6 py-3 bg-white/10 hover:bg-white/20 text-white font-bold text-xs uppercase tracking-widest rounded transition flex items-center gap-2">
+            <i data-lucide="instagram" class="w-4 h-4 text-brandGold"></i>
+            Follow @kj_.collection
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  
+  <!-- FOOTER -->
+  <footer class="bg-brandDark text-gray-400 pt-16 pb-12 border-t border-brandGold/20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+        
+        <div class="md:col-span-1">
+          <h2 class="font-serif-luxury text-2xl font-bold text-white tracking-widest uppercase">
+            UK <span class="text-brandGold">FASHION</span>
+          </h2>
+          <p class="text-xs leading-relaxed text-gray-400 mt-3">
+            Preserving and elevating timeless Balochi Doch, bridal embroidery, and traditional royal heritage attire. Curated from @kj_.collection.
+          </p>
+          <div class="flex space-x-3 mt-6">
+            <a href="https://www.instagram.com/kj_.collection/" target="_blank" class="w-9 h-9 rounded-full bg-white/10 hover:bg-brandGold text-white flex items-center justify-center transition">
+              <i data-lucide="instagram" class="w-4 h-4"></i>
+            </a>
+            <a href="https://www.tiktok.com/@kj_.collection" target="_blank" class="w-9 h-9 rounded-full bg-white/10 hover:bg-brandGold text-white flex items-center justify-center transition">
+              <i data-lucide="video" class="w-4 h-4"></i>
+            </a>
+            <a href="#" class="brand-wa-link w-9 h-9 rounded-full bg-emerald-600/30 hover:bg-emerald-600 text-emerald-300 hover:text-white flex items-center justify-center transition">
+              <i data-lucide="phone" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="font-serif-luxury text-sm font-semibold text-white uppercase tracking-wider mb-4">Collections</h3>
+          <ul class="space-y-2 text-xs uppercase tracking-wider">
+            <li><a href="collection.html?category=Bridal" class="hover:text-brandGold transition">Barat Bridal Doch</a></li>
+            <li><a href="collection.html?category=Walima" class="hover:text-brandGold transition">Walima Soft Hues</a></li>
+            <li><a href="collection.html?category=Festive" class="hover:text-brandGold transition">Mehndi Haft-Rang</a></li>
+            <li><a href="collection.html" class="hover:text-brandGold transition">Kantok & Pandol Specials</a></li>
+            <li><a href="collection.html" class="hover:text-brandGold transition">Velvet Winter Suites</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="font-serif-luxury text-sm font-semibold text-white uppercase tracking-wider mb-4">Quick Links</h3>
+          <ul class="space-y-2 text-xs uppercase tracking-wider">
+            <li><a href="index.html" class="hover:text-brandGold transition">Home</a></li>
+            <li><a href="about.html" class="hover:text-brandGold transition">Heritage & Artisans</a></li>
+            <li><a href="contact.html" class="hover:text-brandGold transition">Custom Inquiries</a></li>
+            <li><a href="https://www.instagram.com/kj_.collection/" target="_blank" class="hover:text-brandGold transition">Instagram @kj_.collection</a></li>
+            <li><a href="https://www.tiktok.com/@kj_.collection" target="_blank" class="hover:text-brandGold transition">TikTok Video Showcase</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="font-serif-luxury text-sm font-semibold text-white uppercase tracking-wider mb-4">Bridal Concierge</h3>
+          <p class="text-xs text-gray-400 mb-3">For custom bridal inquiries, fabric samples, and timeline consultations:</p>
+          <div class="text-xs space-y-2">
+            <p class="flex items-center gap-2"><i data-lucide="instagram" class="w-3.5 h-3.5 text-brandGold"></i> <span class="brand-ig-handle">@kj_.collection</span></p>
+            <p class="flex items-center gap-2"><i data-lucide="message-circle" class="w-3.5 h-3.5 text-emerald-400"></i> <span>WhatsApp Consultation</span></p>
+            <p class="flex items-center gap-2"><i data-lucide="clock" class="w-3.5 h-3.5 text-brandGold"></i> <span>Mon - Sat: 11:00 AM - 9:00 PM</span></p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="border-t border-white/10 pt-6 flex flex-col sm:flex-row justify-between items-center text-xs text-gray-500">
+        <p>&copy; 2026 UK Fashion. All handcrafted rights reserved. Inspired by @kj_.collection.</p>
+        <p class="mt-2 sm:mt-0">Showcase Edition • No Public Checkout</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- GLOBAL INQUIRY MODAL -->
+  <div id="inquiry-modal" class="hidden fixed inset-0 z-50 bg-black/75 backdrop-blur-sm items-center justify-center p-4">
+    <div class="bg-white rounded-lg shadow-2xl max-w-md w-full overflow-hidden relative">
+      <button onclick="closeInquiryModal()" class="absolute top-4 right-4 text-gray-400 hover:text-gray-700" aria-label="Close">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+      <div class="p-6">
+        <span class="text-xs font-bold uppercase tracking-widest text-brandGold">Direct Bridal Consultation</span>
+        <h3 id="modal-product-title" class="font-serif-luxury text-xl font-bold text-gray-900 mt-1">Bridal Dress</h3>
+        <p id="modal-product-doch" class="text-xs text-gray-500 mb-4">Handcrafted Doch</p>
+        
+        <div class="mb-4 aspect-video rounded overflow-hidden bg-gray-100">
+          <img id="modal-product-img" src="" alt="Dress Preview" class="w-full h-full object-cover">
+        </div>
+
+        <form id="inquiry-form" class="space-y-3">
+          <div>
+            <label class="block text-xs font-semibold text-gray-700 uppercase mb-1">Your Name</label>
+            <input type="text" id="inq-name" required placeholder="e.g. Fatima Khan" class="w-full px-3 py-2 border border-gray-300 rounded text-sm focus:border-brandGold focus:outline-none">
+          </div>
+          <div class="grid grid-cols-2 gap-3">
+            <div>
+              <label class="block text-xs font-semibold text-gray-700 uppercase mb-1">City / Country</label>
+              <input type="text" id="inq-city" required placeholder="e.g. Quetta / London" class="w-full px-3 py-2 border border-gray-300 rounded text-sm focus:border-brandGold focus:outline-none">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-gray-700 uppercase mb-1">Wedding Date</label>
+              <input type="date" id="inq-date" class="w-full px-3 py-2 border border-gray-300 rounded text-sm focus:border-brandGold focus:outline-none">
+            </div>
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-gray-700 uppercase mb-1">Customization Notes</label>
+            <textarea id="inq-notes" rows="2" placeholder="Preferred color changes, neckline, stitching preferences..." class="w-full px-3 py-2 border border-gray-300 rounded text-sm focus:border-brandGold focus:outline-none"></textarea>
+          </div>
+          <button type="submit" class="w-full py-3 bg-brandDark text-brandGoldLight hover:bg-brandGold hover:text-white font-bold text-xs uppercase tracking-widest rounded transition flex items-center justify-center gap-2">
+            <i data-lucide="message-circle" class="w-4 h-4 text-emerald-400"></i>
+            <span>Send Inquiry on WhatsApp</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      lucide.createIcons();
+    });
+  </script>
+</body>
+</html>

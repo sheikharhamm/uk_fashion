@@ -1,0 +1,16 @@
+{
+  "name": "uk-fashion-backend",
+  "version": "1.0.0",
+  "description": "Backend API for UK Fashion Balochi Bridal Couture",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "build:products": "node scripts/build-products-json.js",
+    "test:inquiry": "node scripts/test-inquiry-phone.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  }
+}

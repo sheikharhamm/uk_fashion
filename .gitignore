@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+frontend/dist/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Logs & OS artifacts
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+
+# Verification & scraper scratch outputs
+frontend/scripts/header_preview.png
+backend/scripts/scraper/*.html
+

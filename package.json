@@ -1,0 +1,22 @@
+{
+  "name": "uk-fashion",
+  "version": "1.0.0",
+  "description": "UK Fashion - Balochi Bridal & Cultural Couture Monolith Service (React + Express)",
+  "main": "backend/server.js",
+  "scripts": {
+    "setup": "npm install && npm --prefix backend install && npm --prefix frontend install",
+    "dev": "node scripts/start-dev.js",
+    "server": "npm --prefix backend run dev",
+    "client": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build",
+    "vercel-build": "npm --prefix frontend run build && node scripts/vercel-build.js",
+    "start": "node backend/server.js",
+    "monolith": "npm run build && npm start",
+    "build:products": "npm --prefix backend run build:products",
+    "test:inquiry": "npm --prefix backend run test:inquiry",
+    "check:numbers": "node scripts/check-numbers.js"
+  },
+  "devDependencies": {
+    "puppeteer-core": "^25.16.0"
+  }
+}

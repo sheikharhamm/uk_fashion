@@ -1,0 +1,24 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "installCommand": "npm --prefix backend install --omit=dev && npm --prefix frontend install",
+  "buildCommand": "npm run vercel-build",
+  "outputDirectory": "frontend/dist",
+  "functions": {
+    "api/index.js": {
+      "includeFiles": "backend/data/products.json",
+      "excludeFiles": "{backend/public/media/**,backend/data/raw/**,backend/scripts/**,frontend/**}"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/index.js"
+    },
+    {
+      "source": "/((?!api/|media/).*)",
+      "destination": "/index.html"
+    }
+  ]
+}
+

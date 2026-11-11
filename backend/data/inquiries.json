@@ -1,0 +1,32 @@
+[
+  {
+    "id": "inq-1794400118950",
+    "name": "Test Client",
+    "city": "Karachi",
+    "weddingDate": "2026-12-25",
+    "productId": "custom-order",
+    "productTitle": "Custom Balochi Bridal Jora",
+    "notes": "Testing phone update",
+    "createdAt": "2026-11-11T12:28:38.950Z"
+  },
+  {
+    "id": "inq-1794400104095",
+    "name": "Ayesha Khan",
+    "city": "London",
+    "weddingDate": "Not specified",
+    "productId": "custom-order",
+    "productTitle": "Balochi Sheikhi Royal Doch",
+    "notes": "",
+    "createdAt": "2026-11-11T12:28:24.095Z"
+  },
+  {
+    "id": "inq-1794395172039",
+    "name": "Test Client",
+    "city": "Karachi",
+    "weddingDate": "2026-12-25",
+    "productId": "custom-order",
+    "productTitle": "Custom Balochi Bridal Jora",
+    "notes": "Testing phone update",
+    "createdAt": "2026-11-11T11:06:12.039Z"
+  }
+]
