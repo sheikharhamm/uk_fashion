@@ -219,7 +219,7 @@ const indexHtml = `<!DOCTYPE html>
           <a href="https://www.instagram.com/kj_.collection/" target="_blank" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-purple-600 to-pink-500 text-white font-semibold text-xs tracking-wider uppercase inline-flex items-center gap-2 shadow hover:opacity-95">
             <i data-lucide="instagram" class="w-4 h-4"></i> Follow on Instagram
           </a>
-          <a href="https://www.tiktok.com/@kj_.collection" target="_blank" class="px-5 py-2.5 rounded-full bg-black text-white font-semibold text-xs tracking-wider uppercase inline-flex items-center gap-2 shadow hover:bg-gray-800">
+          <a href="https://www.tiktok.com/@uk_fashion92?_r=1&_t=ZS-9BJd87YfHgP" target="_blank" class="px-5 py-2.5 rounded-full bg-black text-white font-semibold text-xs tracking-wider uppercase inline-flex items-center gap-2 shadow hover:bg-gray-800">
             <i data-lucide="video" class="w-4 h-4"></i> Watch on TikTok
           </a>
         </div>
@@ -268,7 +268,7 @@ const indexHtml = `<!DOCTYPE html>
 
         <div class="relative group rounded-lg overflow-hidden aspect-[9/16] bg-gray-900 shadow">
           <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?q=80&w=600&auto=format&fit=crop" alt="Balochi Doch Reel" class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500 opacity-90">
-          <a href="https://www.tiktok.com/@kj_.collection" target="_blank" class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col items-center justify-center p-3 text-white text-center">
+          <a href="https://www.tiktok.com/@uk_fashion92?_r=1&_t=ZS-9BJd87YfHgP" target="_blank" class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col items-center justify-center p-3 text-white text-center">
             <i data-lucide="video" class="w-6 h-6 mb-1 text-brandGold"></i>
             <span class="text-[11px] font-bold">TikTok Clip</span>
           </a>

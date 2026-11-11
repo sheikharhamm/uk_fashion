@@ -79,7 +79,7 @@ const contactHtml = `<!DOCTYPE html>
               </div>
             </a>
 
-            <a href="https://www.tiktok.com/@kj_.collection" target="_blank" class="p-4 rounded-lg bg-gray-50 border border-gray-200 hover:border-gray-400 flex items-center gap-4 transition block">
+            <a href="https://www.tiktok.com/@uk_fashion92?_r=1&_t=ZS-9BJd87YfHgP" target="_blank" class="p-4 rounded-lg bg-gray-50 border border-gray-200 hover:border-gray-400 flex items-center gap-4 transition block">
               <div class="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center flex-shrink-0">
                 <i data-lucide="video" class="w-5 h-5"></i>
               </div>

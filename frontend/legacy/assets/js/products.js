@@ -1,4 +1,4 @@
-﻿const UK_PRODUCTS = [
+const UK_PRODUCTS = [
   {
     id: "uk-bridal-01",
     title: "Shahi Red Royal Doch Bridal Jora",
@@ -219,7 +219,7 @@ const UK_CONFIG = {
   tagline: "Handcrafted Balochi Bridal & Cultural Couture",
   instagramUrl: "https://www.instagram.com/kj_.collection/",
   instagramHandle: "@kj_.collection",
-  tiktokUrl: "https://www.tiktok.com/@kj_.collection",
+  tiktokUrl: "https://www.tiktok.com/@uk_fashion92?_r=1&_t=ZS-9BJd87YfHgP",
   whatsappNumber: "923226324881",
   whatsappDisplay: "+92 322 6324881",
   email: "contact@ukfashioncouture.com",

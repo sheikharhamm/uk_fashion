@@ -8,7 +8,7 @@ export const BRAND_CONFIG = {
   designer: "Khan Jee Collection (@kj_.collection)",
   instagramHandle: "@kj_.collection",
   instagramUrl: "https://www.instagram.com/kj_.collection/",
-  tiktokUrl: "https://www.tiktok.com/@kj_.collection",
+  tiktokUrl: "https://www.tiktok.com/@uk_fashion92?_r=1&_t=ZS-9BJd87YfHgP",
   whatsappNumber: "923226324881",
   whatsappDisplay: "+92 322 6324881",
   address: "Jama Cloth, M.A. Jinnah Road, Karachi, Pakistan",

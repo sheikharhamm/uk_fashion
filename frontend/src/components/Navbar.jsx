@@ -117,7 +117,7 @@ export default function Navbar() {
                 target="_blank"
                 rel="noreferrer"
                 className="w-9 h-9 rounded-full border border-gray-200 text-gray-600 hover:text-[#c5a059] hover:border-[#c5a059] flex items-center justify-center transition"
-                title="TikTok @kj_.collection"
+                title="TikTok @uk_fashion92"
               >
                 <TikTokIcon className="w-4 h-4" />
               </a>
@@ -261,7 +261,7 @@ export default function Navbar() {
                     target="_blank"
                     rel="noreferrer"
                     className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-700 hover:bg-[#c5a059] hover:text-white transition"
-                    title="TikTok @kj_.collection"
+                    title="TikTok @uk_fashion92"
                   >
                     <TikTokIcon className="w-4 h-4" />
                   </a>
